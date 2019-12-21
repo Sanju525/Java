@@ -1,0 +1,24 @@
+//21-7-2019
+constraints in mysql
+insert into <tablename>(column) values(value for column);
+//for not accepting NULL values
+create table <name>(bssid int not null,age int,name varchar(100));@while Creation of table
+alter table <name> change age age int not null; //After creation of table chanege in property(Exep;AFter truncating)
+
+for not accepting duplicate values
+create table <nname>(maiId varchar(100) not null unique,mobile int not null);//use unique constrain {primary key == notnull && unique}
+
+create table <name>(ID int primary key, name varchar(100) not null,loc varchar(100) not null, sal int not null);
+insert into <name> values(1,'Dominic','Berlin',200000);
+insert into <name> values(2,'Logan','Queens',240000);
+insert into <name> values(3,'Tony','New York',3000000);
+insert into <name> values(4,'PSY','Korea',500000);
+
+//create another table <name>=Orders1 and with <columns>=(oid,oname,ocost,oeid reference by emp1);
+
+for slecting both tables use
+
+select * from emp1 innner join emp1.id=orders1.oid
+{Left table compared with right table};
+also right join
+

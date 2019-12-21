@@ -1,0 +1,11 @@
+character		Description
+[abc]			a,b,orc 
+[^abc]			Any char except a,b or c
+[a-zA-Z]		a through z or A through Z, Inclusive range
+[a-d[m-p]]		a through d or m through p:[a-dm-p](union)
+[a-z&&[def]]		d,f,e(intersection)
+[a-z&&[^bc]]		a-z except b&c(Subtraction)
+[a-z&&[^m-p]]		a-z excpet m through p(subtraction)
+
+
+str=str.replaceFirst("e","");//No replaceLast
